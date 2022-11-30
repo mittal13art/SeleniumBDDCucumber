@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="856dfe1e-34b9-46cd-9259-743b3936e37c" name="Changes" comment="made changes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ContactUsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/ContactUsSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/contactUs.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/RegistrationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/RegistrationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/myAccount.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/registration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/registration.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +49,7 @@
       <command value="mvn cluecumber-report:reporting" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: login">
+  <component name="RunManager" selected="JUnit.RunCukesTest">
     <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/login.feature" />
@@ -156,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="JUnit.RunCukesTest" />
+        <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Scenario: login with valid credential" />
         <item itemvalue="Cucumber Java.Scenario: Registration with mandatory valid data" />
         <item itemvalue="Cucumber Java.Feature: registration" />

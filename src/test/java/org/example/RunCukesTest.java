@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         dryRun = false,
         strict = true,
         monochrome = true,
-        //tags = "@register",
-        tags = "@login",
+        tags = "@register",
+        //tags = "@login",
         //tags = "@contactUs",
         plugin = "json:target/cucumber-report/cucumber.json"
 )

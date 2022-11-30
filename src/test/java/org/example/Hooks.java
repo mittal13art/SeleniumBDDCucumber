@@ -10,7 +10,8 @@ public class Hooks {
 
     @Before
     public void setUp() throws IllegalAccessException {
-        driverManager.runOnLocalBrowser();
+        //driverManager.runOnLocalBrowser(); // to see all execution on browser
+        driverManager.runInHeadlessMode(); // it will run on GitCloud, you can't see execution
         driverManager.goToURL();
         driverManager.maxBrowser();
         driverManager.applyImplicitWait();
