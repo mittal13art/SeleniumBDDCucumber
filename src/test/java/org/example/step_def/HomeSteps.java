@@ -42,4 +42,9 @@ public class HomeSteps extends DriverManager {
         homePage.clickOnRegisterButtonOnHomePage();
 
     }
+
+    @When("^I click on the contact us button on home page$")
+    public void iClickOnTheContactUsButtonOnHomePage() {
+        homePage.clickOnContactUsButtonOnHomePage();
+    }
 }

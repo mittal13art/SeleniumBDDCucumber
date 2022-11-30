@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources",
         dryRun = false,
         strict = true,
-        tags = "@register",
+        monochrome = true,
+        //tags = "@register",
+        tags = "@login",
+        //tags = "@contactUs",
         plugin = "json:target/cucumber-report/cucumber.json"
 )
 

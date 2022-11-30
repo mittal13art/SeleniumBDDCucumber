@@ -92,7 +92,8 @@ public class DriverManager {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    public void takeElementscreenshot(WebElement element, String fileName) {
+    //take element screenshot comes at selenium 4
+    public void takeElementScreenshot(WebElement element, String fileName) {
         File scnFile = element.getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(scnFile, new File("./target/screenshots/" + fileName + ".png"));
@@ -102,14 +103,15 @@ public class DriverManager {
     }
 
     public void takeScreenshot(Scenario scenario) {
-
+        //107 & 108 take screenshot and attach in our scenario output(after execution)
         byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         scenario.embed(screenShot, "image/png");
-       //take a screenshot
+
+       //take a screenshot passing scenario when scenario fails
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         try {
-            FileUtils.copyFile(scrFile, new File("/Users/khuntn01/Desktop/screanshotTests/Error.jpg"));
+            FileUtils.copyFile(scrFile, new File("/Users/mitta/oneDrive/Desktop/screenshotErrors.jpg"));
         } catch (IOException e) {
         // TODO Auto-generated catch block
             e.printStackTrace();

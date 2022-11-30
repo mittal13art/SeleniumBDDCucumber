@@ -33,29 +33,39 @@ public class RegistrationPage extends DriverManager {
     WebElement myAccountButtonDisplayed;
 
 
-    public void enterFirstName(String firstName) {
+    public void enterRegistrationDetails(String firstName,String lastName, String emailOnRGPage, String passwordOnRGPage, String confirmPassword) {
 
+        firstNameInputBox.clear();
         firstNameInputBox.sendKeys(firstName);
-    }
-
-    public void enterLastName(String lastName) {
-
+        lastNameInputBox.clear();
         lastNameInputBox.sendKeys(lastName);
-    }
-
-    public void enterEmailOnRGPage(String emailOnRGPage) {
-
-        emailInputBoxOnRegistrationPage.sendKeys(emailOnRGPage);
-    }
-
-    public void enterPasswordOnRGPage(String passwordOnRGPage) {
+        emailInputBoxOnRegistrationPage.clear();
+        int myRandomNumber = generateRandomNumber();
+        emailInputBoxOnRegistrationPage.sendKeys(myRandomNumber+emailOnRGPage);
+        passwordInputBoxOnRegistrationPage.clear();
         passwordInputBoxOnRegistrationPage.sendKeys(passwordOnRGPage);
-    }
-
-    public void enterConfirmPassword(String confirmPassword) {
-
+        confirmPasswordInputBox.clear();
         confirmPasswordInputBox.sendKeys(confirmPassword);
     }
+
+//    public void enterLastName(String lastName) {
+//
+//        lastNameInputBox.sendKeys(lastName);
+//    }
+//
+//    public void enterEmailOnRGPage(String emailOnRGPage) {
+//
+//        emailInputBoxOnRegistrationPage.sendKeys(emailOnRGPage);
+//    }
+//
+//    public void enterPasswordOnRGPage(String passwordOnRGPage) {
+//        passwordInputBoxOnRegistrationPage.sendKeys(passwordOnRGPage);
+//    }
+//
+//    public void enterConfirmPassword(String confirmPassword) {
+//
+//        confirmPasswordInputBox.sendKeys(confirmPassword);
+//    }
 
     public void clickOnRegisterButtonOnRegistrationPage() {
 
@@ -68,7 +78,7 @@ public class RegistrationPage extends DriverManager {
 
     }
 
-    public boolean iShouldSeeMyAccountButtonDisplayed(){
+    public boolean iShouldSeeMyAccountButtonDisplayed() {
         return myAccountButtonDisplayed.isDisplayed();
     }
 

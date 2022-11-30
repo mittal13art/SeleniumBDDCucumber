@@ -25,7 +25,7 @@ public class LoginSteps extends DriverManager {
     public void iShouldSeeTextInUrl(String expectedUrlText) throws Throwable {
         String actualURL = getURL();
         System.out.println(actualURL);
-        assertThat(actualURL, containsString(expectedUrlText));
+        assertThat(actualURL,containsString(expectedUrlText));
 
     }
 

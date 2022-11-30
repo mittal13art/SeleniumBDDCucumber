@@ -15,21 +15,30 @@ public class HomePage extends DriverManager {
     @FindBy(className = "ico-login")
     WebElement logInButtonOnHomePage;
 
-    @FindBy(xpath = "//a[@class='ico-register']" )
+    @FindBy(xpath = "//a[@class='ico-register']")
     WebElement registerButtonOnHomePage;
 
-    public String getTextFromHomePage(){
+    @FindBy(xpath = "//a[@href='/contactus']")
+    WebElement contactUsButton;
+
+    public String getTextFromHomePage() {
 
         return textOnHomePage.getText();
     }
 
-    public void clickOnLogInButtonOnHomePage(){
+    public void clickOnLogInButtonOnHomePage() {
 
         logInButtonOnHomePage.click();
     }
+
     public void clickOnRegisterButtonOnHomePage() {
 
         registerButtonOnHomePage.click();
+    }
+
+    public void clickOnContactUsButtonOnHomePage() {
+        scrollTo(contactUsButton);
+        contactUsButton.click();
     }
 
 }
