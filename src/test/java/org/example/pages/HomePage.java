@@ -21,6 +21,11 @@ public class HomePage extends DriverManager {
     @FindBy(xpath = "//a[@href='/contactus']")
     WebElement contactUsButton;
 
+    @FindBy(id = "small-searchterms")
+    WebElement searchField;
+
+
+
     public String getTextFromHomePage() {
 
         return textOnHomePage.getText();
@@ -39,6 +44,10 @@ public class HomePage extends DriverManager {
     public void clickOnContactUsButtonOnHomePage() {
         scrollTo(contactUsButton);
         contactUsButton.click();
+    }
+
+    public void takeScreenshotOfSearchField(){
+        takeElementScreenshot(searchField,"searchFieldScreenshot");
     }
 
 }

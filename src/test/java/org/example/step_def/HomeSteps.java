@@ -47,4 +47,10 @@ public class HomeSteps extends DriverManager {
     public void iClickOnTheContactUsButtonOnHomePage() {
         homePage.clickOnContactUsButtonOnHomePage();
     }
+
+    @When("^I take screenshot of search field$")
+    public void iTakeScreenshotOfSearchField() {
+        homePage.takeScreenshotOfSearchField();
+
+    }
 }

@@ -7,7 +7,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -61,12 +63,18 @@ public class DriverManager {
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.setCapability("--headless", true);
+                driver = new EdgeDriver(edgeOptions);
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.setHeadless(true);
+                firefoxOptions.addArguments("--window-size=1920,1080");
+                driver = new FirefoxDriver(firefoxOptions);
                 break;
+
             default:
                 throw new IllegalAccessException("Unexpected browser");
         }
@@ -116,35 +124,41 @@ public class DriverManager {
     }
 
     //take element screenshot comes at selenium 4
+    //for visual regression or screenshot comparison for UI layout, look and feel, font size, colour, location
+
     public void takeElementScreenshot(WebElement element, String fileName) {
         File scnFile = element.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scnFile, new File("./target/screenshots/" + fileName + ".png"));
+            FileUtils.copyFile(scnFile, new File("src/test/resources/screenshots/" + fileName + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    //to take full screenshot when we do functional test,we add that in report/ save in local machine/ debugging/trouble shooting
+    //finding issues
     public void takeScreenshot(Scenario scenario) {
         //107 & 108 take screenshot and attach in our scenario output(after execution)
         byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         scenario.embed(screenShot, "image/png");
 
-       //take a screenshot passing scenario when scenario fails
+        //take a screenshot passing scenario when scenario fails
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-        try {
-            FileUtils.copyFile(scrFile, new File("/Users/mitta/oneDrive/Desktop/screenshotErrors.jpg"));
+        try {//C:\Users\mitta\OneDrive\Desktop\screenshotErrors
+            FileUtils.copyFile(scrFile, new File("/Users/mitta/OneDrive/Desktop/screenshotErrors" + generateRandomNumber() + ".jpg"));
         } catch (IOException e) {
-        // TODO Auto-generated catch block
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
+
     public int generateRandomNumber() {
 
         Random random = new Random();
         return random.nextInt(100);
     }
+
 
     public static String getRandomString(int length) {
         final String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ";
