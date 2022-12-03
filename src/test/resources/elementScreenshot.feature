@@ -1,4 +1,4 @@
-@ElementScreenShot
+@ElementScreenShot @regression
   Feature: Element Screenshots
 
     Scenario:  Take element Screenshots of search field

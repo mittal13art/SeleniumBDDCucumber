@@ -1,4 +1,4 @@
-@login
+@login @regression
 Feature: login feature
   As a customer
   I want to login to the login functionality so I can check my log in details.
@@ -16,7 +16,7 @@ Feature: login feature
     And I enter valid email "<email>"
     And I enter valid password "<password>"
     And I click on the log in button on login page
-    Then I should see logout button displayed
+#    Then I should see logout button displayed
     Examples:
       | email            | password |
       | test1@gmail.com   | 123456   |
