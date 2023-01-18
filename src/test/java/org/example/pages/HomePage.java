@@ -24,6 +24,9 @@ public class HomePage extends DriverManager {
     @FindBy(id = "small-searchterms")
     WebElement searchField;
 
+    @FindBy(xpath = "//a[@href='/books']")
+    WebElement booksCategory;
+
 
 
     public String getTextFromHomePage() {
@@ -47,7 +50,12 @@ public class HomePage extends DriverManager {
     }
 
     public void takeScreenshotOfSearchField(){
+
         takeElementScreenshot(searchField,"searchFieldScreenshot");
+    }
+
+    public void clickOnBooksCategory(){
+        booksCategory.click();
     }
 
 }

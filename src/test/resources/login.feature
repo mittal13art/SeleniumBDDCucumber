@@ -19,7 +19,7 @@ Feature: login feature
 #    Then I should see logout button displayed
     Examples:
       | email            | password |
-      | test1@gmail.com   | 123456   |
+      | test@gmail.com   | 123456   |
       | mittal@gmail.com | 123456   |
       | hiren@gmail.com | 123456   |
 

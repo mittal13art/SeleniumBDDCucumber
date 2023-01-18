@@ -27,6 +27,7 @@ public class DriverManager {
     String baseURL = "https://demo.nopcommerce.com/";
 
     public DriverManager() {
+
         PageFactory.initElements(driver, this);
     }
 
@@ -87,9 +88,9 @@ public class DriverManager {
 
     public void applyImplicitWait() {
         //for selenium 4
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
          //  for selenium 3
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     public void closeBrowser() {
