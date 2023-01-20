@@ -123,7 +123,7 @@ public class DriverManager {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    //take element screenshot comes at selenium 4
+    //to take screenshot for elements only--> for selenium 4, use below method
     //for visual regression or screenshot comparison for UI layout, look and feel, font size, colour, location
 
     public void takeElementScreenshot(WebElement element, String fileName) {
@@ -135,7 +135,7 @@ public class DriverManager {
         }
     }
 
-    //to take full screenshot when we do functional test,we add that in report/ save in local machine/ debugging/trouble shooting
+    //to take full screenshot when we do functional test,we add that in report/save in local machine/debugging/troubleshooting
     //finding issues
     public void takeScreenshot(Scenario scenario) {
         //107 & 108 take screenshot and attach in our scenario output(after execution)
@@ -156,7 +156,7 @@ public class DriverManager {
     public int generateRandomNumber() {
 
         Random random = new Random();
-        return random.nextInt(100);
+        return random.nextInt(1000);
     }
 
 

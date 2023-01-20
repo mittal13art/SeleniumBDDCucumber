@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegistrationPage extends DriverManager {
+
+    @FindBy(id = "gender-female")
+    WebElement genderFemale;
+
     @FindBy(xpath = "//input[@data-val-required='First name is required.']")
     WebElement firstNameInputBox;
 
@@ -31,6 +35,9 @@ public class RegistrationPage extends DriverManager {
 
     @FindBy(xpath = "//a[@class='ico-account']")
     WebElement myAccountButtonDisplayed;
+
+    @FindBy(xpath = "//a[@href='/books']")
+    WebElement booksCategory;
 
 
     public void enterRegistrationDetails(String firstName,String lastName, String emailOnRGPage, String passwordOnRGPage, String confirmPassword) {
@@ -80,6 +87,15 @@ public class RegistrationPage extends DriverManager {
 
     public boolean iShouldSeeMyAccountButtonDisplayed() {
         return myAccountButtonDisplayed.isDisplayed();
+    }
+
+    public void clickOnGenderOnRegistrationPage() {
+
+        genderFemale.click();
+    }
+
+    public void clickOnBooksCategory() {
+        booksCategory.click();
     }
 
 

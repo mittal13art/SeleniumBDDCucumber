@@ -90,4 +90,13 @@ public class RegistrationSteps extends DriverManager {
     }
 
 
+    @And("^I select gender \"([^\"]*)\"$")
+    public void iSelectGender() throws Throwable {
+        registrationPage.clickOnGenderOnRegistrationPage();
+    }
+
+    @And("^I click on the \"([^\"]*)\"$")
+    public void iClickOnThe() throws Throwable {
+        registrationPage.clickOnBooksCategory();
+    }
 }
