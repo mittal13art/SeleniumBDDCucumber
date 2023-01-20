@@ -86,6 +86,7 @@ public class RegistrationPage extends DriverManager {
     }
 
     public boolean iShouldSeeMyAccountButtonDisplayed() {
+
         return myAccountButtonDisplayed.isDisplayed();
     }
 

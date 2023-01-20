@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +27,7 @@ public class DriverManager {
     String baseURL = "https://demo.nopcommerce.com/";
 
     public DriverManager() {
+
         PageFactory.initElements(driver, this);
     }
 
@@ -85,6 +87,9 @@ public class DriverManager {
     }
 
     public void applyImplicitWait() {
+        //for selenium 4
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+         //  for selenium 3
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 

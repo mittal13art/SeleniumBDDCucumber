@@ -1,4 +1,4 @@
-@contactUs
+@contactUs @regression
 Feature: contact us feature
   As a customer
   I want to use contact us feature

@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="856dfe1e-34b9-46cd-9259-743b3936e37c" name="Changes" comment="made changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/ShoppingCartSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/addProductToShoppingCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,15 +83,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Registration with mandatory valid data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add product to the basket" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/registration.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/addProductToShoppingCart.feature" />
       <option name="GLUE" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SeleniumBDDCucumber" />
-      <option name="NAME_FILTER" value="^Registration with mandatory valid data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Registration with mandatory valid data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Registration with mandatory valid data" />
+      <option name="NAME_FILTER" value="^Add product to the basket$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Add product to the basket$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add product to the basket" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -149,10 +161,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCukesTest" />
+        <item itemvalue="Cucumber Java.Scenario: Add product to the basket" />
+        <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Scenario: login with valid credential" />
         <item itemvalue="Cucumber Java.Scenario: validate login page" />
-        <item itemvalue="Cucumber Java.Feature: login" />
-        <item itemvalue="Cucumber Java.Scenario: Registration with mandatory valid data" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +184,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668602766557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="made changes">
+      <created>1670071659822</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670071659822</updated>
+    </task>
+    <task id="LOCAL-00003" summary="made changes">
+      <created>1670072002045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670072002045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="made changes">
+      <created>1670072403213</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670072403213</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

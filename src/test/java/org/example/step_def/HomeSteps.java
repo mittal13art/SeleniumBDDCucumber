@@ -33,7 +33,6 @@ public class HomeSteps extends DriverManager {
 
     @When("^I click on the log in button$")
     public void i_click_on_the_log_in_button() throws Throwable {
-
         homePage.clickOnLogInButtonOnHomePage();
     }
 
@@ -45,6 +44,7 @@ public class HomeSteps extends DriverManager {
 
     @When("^I click on the contact us button on home page$")
     public void iClickOnTheContactUsButtonOnHomePage() {
+
         homePage.clickOnContactUsButtonOnHomePage();
     }
 
@@ -52,5 +52,10 @@ public class HomeSteps extends DriverManager {
     public void iTakeScreenshotOfSearchField() {
         homePage.takeScreenshotOfSearchField();
 
+    }
+
+    @When("^I click on Books category on home page$")
+    public void iClickOnBooksCategoryOnHomePage() {
+        homePage.clickOnBooksCategory();
     }
 }

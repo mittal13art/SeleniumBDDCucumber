@@ -2,7 +2,7 @@ Feature: Registration feature
   As a customer
   I want to register
 
-  @register
+  @register @regression
   Scenario: Registration with mandatory valid data
     Given I am on the home page
     When I click on register button
