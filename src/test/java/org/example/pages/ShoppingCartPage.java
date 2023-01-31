@@ -22,6 +22,12 @@ public class ShoppingCartPage extends DriverManager {
     @FindBy(className = "product-name")
     WebElement productNameOnShoppingCartPage;
 
+    @FindBy(id = "termsofservice")
+    WebElement tickBoxTermsOfService;
+
+    @FindBy(id = "checkout")
+    WebElement checkOutButton;
+
 
     public void clickOnImageOfFirstPrizePies() {
         imageOfFirstPrizePies.click();
@@ -43,5 +49,16 @@ public class ShoppingCartPage extends DriverManager {
 
     public String textProductNameOnShoppingCartPage() {
         return productNameOnShoppingCartPage.getText();
+
+    }
+
+    public void clickOnTermsOfService() {
+        tickBoxTermsOfService.click();
+
+    }
+
+    public void clickOnCheckOutButton() {
+        checkOutButton.click();
+
     }
 }

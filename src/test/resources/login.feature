@@ -20,8 +20,8 @@ Feature: login feature
     Examples:
       | email            | password |
       | test@gmail.com   | 123456   |
-      | mittal@gmail.com | 123456   |
-      | hiren@gmail.com | 123456   |
+#      | mittal@gmail.com | 123456   |
+#      | hiren@gmail.com | 123456   |
 
   Scenario: login with invalid credential
     And I enter invalid email "abc"

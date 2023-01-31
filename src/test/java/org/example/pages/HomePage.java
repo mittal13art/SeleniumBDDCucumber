@@ -24,8 +24,20 @@ public class HomePage extends DriverManager {
     @FindBy(id = "small-searchterms")
     WebElement searchField;
 
-    @FindBy(xpath = "//a[@href='/books']")
+    @FindBy(xpath = "//*[@class='header-menu']/ul[2]/li[1]")
+    WebElement computersCategory;
+
+    @FindBy(xpath = "//*[@class='header-menu']/ul[2]/li[2]")
+    WebElement electronicsCategory;
+    @FindBy(xpath = "//*[@class='header-menu']/ul[1]/li[5]")
     WebElement booksCategory;
+
+    @FindBy(xpath = "//*[@class='header-menu']/ul[2]/li[6]")
+    WebElement jewelryCategory;
+
+    @FindBy(xpath = "//*[@class='header-menu']/ul[2]/li[7]")
+    WebElement giftCardCategory;
+
 
 
 
@@ -54,8 +66,26 @@ public class HomePage extends DriverManager {
         takeElementScreenshot(searchField,"searchFieldScreenshot");
     }
 
+    public void clickOnComputersCategory(){
+        computersCategory.click();
+    }
+
+    public void clickOnElectronicsCategory(){
+        electronicsCategory.click();
+    }
+
     public void clickOnBooksCategory(){
         booksCategory.click();
     }
+
+    public void clickOnJewelryCategory(){
+        jewelryCategory.click();
+    }
+
+    public void clickOnGiftCardCategory(){
+        giftCardCategory.click();
+    }
+
+
 
 }

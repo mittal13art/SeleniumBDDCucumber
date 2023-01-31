@@ -42,4 +42,16 @@ public class ShoppingCartSteps extends DriverManager {
         System.out.println(actualProductNameOnShoppingCartPage);
         assertThat(actualProductNameOnShoppingCartPage, is(equalToIgnoringCase(expectedProductNameOnShoppingCartPage)));
     }
+
+    @And("^I click to accept term and condition$")
+    public void iClickToAcceptTermAndCondition() {
+        shoppingCartPage.clickOnTermsOfService();
+    }
+
+    @And("^I click on checkout button$")
+    public void iClickOnCheckoutButton() {
+        shoppingCartPage.clickOnCheckOutButton();
+    }
+
+
 }

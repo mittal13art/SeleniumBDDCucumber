@@ -19,6 +19,20 @@ public class RegistrationSteps extends DriverManager {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
+
+    @And("^I select gender \"([^\"]*)\"$")
+    public void iSelectGender(String gender) throws Throwable {
+        switch (gender){
+            case "Male":
+                registrationPage.selectMaleOnRegistrationPage();
+                break;
+            case "Female":
+                registrationPage.selectFemaleOnRegistrationPage();
+                break;
+            default:
+                throw new IllegalAccessException("Unexpected gender");
+        }
+    }
     @When("^I enter following data for registration$")
     public void iEnterFollowingDataForRegistration(DataTable dataTable) {
         List<Map<String, String>> data = dataTable.asMaps(String.class,String.class);
@@ -90,13 +104,8 @@ public class RegistrationSteps extends DriverManager {
     }
 
 
-    @And("^I select gender \"([^\"]*)\"$")
-    public void iSelectGender() throws Throwable {
-        registrationPage.clickOnGenderOnRegistrationPage();
-    }
-
-    @And("^I click on the \"([^\"]*)\"$")
-    public void iClickOnThe() throws Throwable {
-        registrationPage.clickOnBooksCategory();
+    @And("^I click on CONTINUE button on register page$")
+    public void iClickOnCONTINUEButtonOnRegisterPage() {
+        registrationPage.clickOnContinueButtonOnRegistrationPage();
     }
 }

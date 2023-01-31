@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BooksPLPage extends DriverManager {
 
-    @FindBy(className = "button-2 product-box-add-to-cart-button")
+    @FindBy(xpath = "//*[@class='button-2 product-box-add-to-cart-button']")
     WebElement addToCartButtonFahrenheit;
 
     @FindBy(xpath = "//a[@href='/cart']")

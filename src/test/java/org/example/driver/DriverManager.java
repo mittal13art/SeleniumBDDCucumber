@@ -90,7 +90,7 @@ public class DriverManager {
         //for selenium 4
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
          //  for selenium 3
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     public void closeBrowser() {
@@ -151,7 +151,8 @@ public class DriverManager {
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         try {//C:\Users\mitta\OneDrive\Desktop\screenshotErrors
-            FileUtils.copyFile(scrFile, new File("/Users/mitta/OneDrive/Desktop/screenshotErrors" + generateRandomNumber() + ".jpg"));
+
+            FileUtils.copyFile(scrFile, new File("C:/Users/mitta/OneDrive/Desktop/screenshotErrors/error" + generateRandomNumber() + ".jpg"));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

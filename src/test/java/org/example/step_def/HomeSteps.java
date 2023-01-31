@@ -13,6 +13,7 @@ public class HomeSteps extends DriverManager {
 
     DriverManager driverManager = new DriverManager();
     HomePage homePage = new HomePage();
+
     @Given("^I am on the home page$")
     public void i_am_on_the_home_page() throws Throwable {
         String actualURL = getURL();
@@ -20,14 +21,14 @@ public class HomeSteps extends DriverManager {
         assertThat(actualURL, is(endsWith("nopcommerce.com/")));
 
         //validation through title
-        String actualTitle=driverManager.getTitle();
+        String actualTitle = driverManager.getTitle();
         System.out.println(actualTitle);
-        assertThat(actualTitle,is(equalToIgnoringCase("nopCommerce demo store")));
+        assertThat(actualTitle, is(equalToIgnoringCase("nopCommerce demo store")));
 
         //validation through text from home page
-        String actualTextOnHomePage= homePage.getTextFromHomePage();
+        String actualTextOnHomePage = homePage.getTextFromHomePage();
         System.out.println(actualTextOnHomePage);
-        assertThat(actualTextOnHomePage,is(equalToIgnoringCase("Welcome to our store")));
+        assertThat(actualTextOnHomePage, is(equalToIgnoringCase("Welcome to our store")));
 
     }
 
@@ -54,8 +55,32 @@ public class HomeSteps extends DriverManager {
 
     }
 
-    @When("^I click on Books category on home page$")
-    public void iClickOnBooksCategoryOnHomePage() {
-        homePage.clickOnBooksCategory();
+//    @When("^I click on Books category on home page$")
+//    public void iClickOnBooksCategoryOnHomePage() {
+//        homePage.clickOnBooksCategory();
+//    }
+
+    @And("^I click on the \"([^\"]*)\"$")
+    public void iClickOnThe(String categoryName) throws Throwable {
+        switch (categoryName) {
+            case "Computers":
+                homePage.clickOnComputersCategory();
+                break;
+            case "Electronics":
+                homePage.clickOnElectronicsCategory();
+                break;
+            case "Books":
+                homePage.clickOnBooksCategory();
+                break;
+            case "Jewelry":
+                homePage.clickOnJewelryCategory();
+                break;
+            case "Gift Cards":
+                homePage.clickOnGiftCardCategory();
+                break;
+            default:
+                throw new IllegalAccessException("Unexpected header button");
+        }
     }
 }
+

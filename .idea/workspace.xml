@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="856dfe1e-34b9-46cd-9259-743b3936e37c" name="Changes" comment="made changes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/ShoppingCartSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/addProductToShoppingCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ConfirmationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/ConfirmationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_01_2023_10_11_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunCukesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/driver/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/BooksPLPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/BooksPLPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/CheckOutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/CheckOutSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/CheckOutSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/HomeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/RegistrationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/RegistrationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/step_def/ShoppingCartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/step_def/ShoppingCartSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/endToEnd.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/endToEnd.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mitta/IdeaProjects/SeleniumBDDCucumber&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mitta/IdeaProjects/nopCommerceCICD&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
@@ -103,15 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: login with valid credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Buy one product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/endToEnd.feature" />
       <option name="GLUE" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SeleniumBDDCucumber" />
-      <option name="NAME_FILTER" value="^login with valid credential$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^login with valid credential$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: login with valid credential" />
+      <option name="NAME_FILTER" value="^Buy one product$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Buy one product$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Buy one product" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,15 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: validate login page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: login with valid credential" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/login.feature" />
       <option name="GLUE" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SeleniumBDDCucumber" />
-      <option name="NAME_FILTER" value="^validate login page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^validate login page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: validate login page" />
+      <option name="NAME_FILTER" value="^login with valid credential$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^login with valid credential$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: login with valid credential" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCukesTest" />
+        <item itemvalue="Cucumber Java.Scenario: Buy one product" />
         <item itemvalue="Cucumber Java.Scenario: Add product to the basket" />
         <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Scenario: login with valid credential" />
-        <item itemvalue="Cucumber Java.Scenario: validate login page" />
       </list>
     </recent_temporary>
   </component>

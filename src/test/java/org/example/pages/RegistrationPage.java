@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 
 public class RegistrationPage extends DriverManager {
 
+    @FindBy(id = "gender-male")
+    WebElement maleRadioBtn;
     @FindBy(id = "gender-female")
-    WebElement genderFemale;
-
+    WebElement femaleRadioBtn;
     @FindBy(xpath = "//input[@data-val-required='First name is required.']")
     WebElement firstNameInputBox;
-
     @FindBy(id = "LastName")
     WebElement lastNameInputBox;
 
@@ -38,8 +38,18 @@ public class RegistrationPage extends DriverManager {
 
     @FindBy(xpath = "//a[@href='/books']")
     WebElement booksCategory;
+    @FindBy(xpath = "//a[@class='button-1 register-continue-button']")
+    WebElement continueButtonRegisterPage;
 
+    public void selectMaleOnRegistrationPage() {
 
+        maleRadioBtn.click();
+    }
+
+    public void selectFemaleOnRegistrationPage() {
+
+        femaleRadioBtn.click();
+    }
     public void enterRegistrationDetails(String firstName,String lastName, String emailOnRGPage, String passwordOnRGPage, String confirmPassword) {
 
         firstNameInputBox.clear();
@@ -79,6 +89,11 @@ public class RegistrationPage extends DriverManager {
         registerButtonOnRegistrationPage.click();
     }
 
+    public void clickOnContinueButtonOnRegistrationPage() {
+
+        continueButtonRegisterPage.click();
+    }
+
 
     public boolean iShouldSeeResultAfterRegistrationCompleted() {
         return resultAfterRegistration.isDisplayed();
@@ -90,10 +105,7 @@ public class RegistrationPage extends DriverManager {
         return myAccountButtonDisplayed.isDisplayed();
     }
 
-    public void clickOnGenderOnRegistrationPage() {
 
-        genderFemale.click();
-    }
 
     public void clickOnBooksCategory() {
         booksCategory.click();
