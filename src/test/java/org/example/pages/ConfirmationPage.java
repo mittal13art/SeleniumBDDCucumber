@@ -23,5 +23,9 @@ public class ConfirmationPage extends DriverManager {
         return thankYouText.getText();
     }
 
+    public void clickContinueButtonOnConfirmationPage(){
+        continueButtonOnConfirmationPage.click();
+    }
+
 
 }

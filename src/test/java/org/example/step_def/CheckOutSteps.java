@@ -66,11 +66,11 @@ public class CheckOutSteps extends DriverManager {
         System.out.println(data);
 
         checkOutPage.selectCardType();
-        checkOutPage.enterCardHolderName("cardHolderName");
-        checkOutPage.enterCardNumber("cardNumber");
+        checkOutPage.enterCardHolderName(data.get(0).get("cardHolderName"));
+        checkOutPage.enterCardNumber(data.get(0).get("cardNumber"));
         checkOutPage.selectMonthFromDropDown();
         checkOutPage.selectYearFromDropDown();
-        checkOutPage.enterCardCode("cardCode");
+        checkOutPage.enterCardCode(data.get(0).get("cardCode"));
 
     }
 

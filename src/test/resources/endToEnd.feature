@@ -8,7 +8,7 @@ Feature: End to end Functionality
     And I select gender "Female"
     And I enter following data for registration
       | firstName | lastName | email          | password | confirmPassword |
-      | Mittal    | Thummar  | test@gmail.com | test@123 | test@123        |
+      | Mittal    | Thummar  | test2@gmail.com | test@123 | test@123        |
     And I click on REGISTER button on register page
     And I click on CONTINUE button on register page
     And I click on the "Books"
@@ -18,7 +18,7 @@ Feature: End to end Functionality
     And I click on checkout button
     And I enter following log in details
       | email          | password |
-      | test@gmail.com | test@123 |
+      | test2@gmail.com | test@123 |
     And I click on the log in button on checkout page
     And I click to accept term and condition
     And I click on checkout button
@@ -36,6 +36,6 @@ Feature: End to end Functionality
     And I click on continue button on payment information
     When I click on confirm button on checkout page
     Then I should see "Thank you" text on confirmation page
-#    And I should see "Your order has been successfully processed!" text on confirmation page
-#    And the url should contain with "checkout/completed"
+    And I should see "Your order has been successfully processed!" text on confirmation page
+    And the url should contain with "checkout/completed"
 

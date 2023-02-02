@@ -108,4 +108,6 @@ public class RegistrationSteps extends DriverManager {
     public void iClickOnCONTINUEButtonOnRegisterPage() {
         registrationPage.clickOnContinueButtonOnRegistrationPage();
     }
+
+
 }
